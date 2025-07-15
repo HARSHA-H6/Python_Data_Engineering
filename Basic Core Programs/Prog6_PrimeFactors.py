@@ -13,8 +13,7 @@ def get_prime_factors(number):
         number = number//2
 
     if number==1:
-        return prime_factors
-    
+        return prime_factors 
     start_range = 3
     stop_range = number**0.5<3 or number**0.5
     skip_range = 2
@@ -33,6 +32,3 @@ def get_prime_factors(number):
 # Taking the user input from the user
 number = int(input("Enter the number: "))
 print(f"Prime factors of the number {number} is {get_prime_factors(number)}")
-
-
-
